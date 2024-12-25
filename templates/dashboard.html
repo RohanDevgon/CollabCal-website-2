@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CollabCal - Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; /* Center vertically */
+      }
+      .option-btn {
+        width: 80%;
+        max-width: 300px;
+        padding: 15px;
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .option-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to CollabCal</h1>
+    <div class="dashboard-container">
+      <h2>Select an Option</h2>
+      <button class="option-btn" onclick="location.href='/my-calendar'">View My Calendar</button>
+      <button class="option-btn" onclick="location.href='/shared-calendar'">View Someone Else's Calendar</button>
+    </div>
+  </body>
+</html>
